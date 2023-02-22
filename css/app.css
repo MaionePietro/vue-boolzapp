@@ -52,3 +52,13 @@ li{
 .avatar {
     width: 100%;
 }
+
+/* sidebar_notication */
+.sidebar_notication{
+    height: 86px;
+    background-color: #82D5FC;
+}
+.container-avatar .fa-bell-slash{
+    color: #82D5FC;
+    font-size: 22px;
+}
