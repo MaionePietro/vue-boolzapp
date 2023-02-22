@@ -4,6 +4,11 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
+:root {
+    --grey: #E7E7E7;
+    --blu: #82D5FC;
+    --greyText: #999C9D;
+}
 
 .custom-container {
     max-width: 1600px !important;
@@ -24,7 +29,7 @@ body {
 
 /* sidebar_profile */
 .sidebar_profile {
-    background-color: #E7E7E7;
+    background-color: var(--grey);
     height: 74px;
 }
 
@@ -56,7 +61,7 @@ li{
 /* sidebar_notication */
 .sidebar_notication{
     height: 86px;
-    background-color: #82D5FC;
+    background-color: var(--blu);
 }
 .container-avatar .fa-bell-slash{
     color: #82D5FC;
@@ -65,9 +70,20 @@ li{
 
 /* sidebar_search */
 .sidebar_search{
-    background-color: #E7E7E7;
+    background-color: var(--grey);
     height: 53px;
 }
 .custom-form{
     width: 100%;
+}
+
+
+
+/* main_info */
+.main_info{
+    background-color: var(--grey);
+    height: 74px;
+}
+.main_info .access{
+    color: var(--greyText);
 }
