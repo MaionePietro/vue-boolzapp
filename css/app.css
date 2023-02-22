@@ -11,6 +11,8 @@ body {
     --greyText: #999C9D;
     --bg: #CDD6D5;
     --green: #008B7D;
+    --white: #ffffff;
+    --messag: #CFF8B1;
 }
 
 .custom-container {
@@ -85,6 +87,9 @@ li{
     height: calc(100% - 213px);
     background-color: var(--grey);
 }
+.contact{
+    background-color: white;
+}
 
 
 /* main_info */
@@ -100,7 +105,23 @@ li{
 .main_chat{
     height: calc(100% - 148px);
     background-image: url(../img/bg.jpg);
+    padding: 58px 100px;
 }
+
+.message{
+    max-width: 327px;
+    min-width: 100px;
+    padding: 10px;
+    background-color: var(--messag);
+}
+.time{
+    font-size: 10px;
+    color: var(--greyText);
+}
+.receiver .message{
+    background-color: var(--white);
+}
+
 
 /* main_write */
 .main_write{
