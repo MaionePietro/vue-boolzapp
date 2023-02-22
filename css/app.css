@@ -3,11 +3,13 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: var(--bg);
 }
 :root {
     --grey: #E7E7E7;
     --blu: #82D5FC;
     --greyText: #999C9D;
+    --bg: #CDD6D5;
 }
 
 .custom-container {
@@ -86,4 +88,17 @@ li{
 }
 .main_info .access{
     color: var(--greyText);
+}
+
+/* main_chat */
+.main_chat{
+    height: calc(100% - 148px);
+    background-image: url(../img/bg.jpg);
+}
+
+
+/* main_write */
+.main_write{
+    background-color: var(--grey);
+    height: 74px;
 }
