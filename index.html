@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boolzapp</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c5d4023dee.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/app.css">
 </head>
 
 <body class="d-flex align-items-center">
-    <div class="container custom-container d-flex ">
+
+    <div class="container custom-container d-flex mt-5" id="app">
         <aside class="sidebar border-end">
             <section class="sidebar_profile d-flex justify-content-between align-items-center">
                 <div class="d-flex align-items-center ms-2">
@@ -53,14 +55,20 @@
                 </form>
             </section>
             <section class="sidebar_chat overflow-auto">
-                <div class="contact border d-flex align-items-center p-2">
+                <div 
+                v-for="(element, index) in contacts"
+                class="contact border d-flex align-items-center p-2 position-relative">
+                
                     <div class="container-avatar">
-                        <img src="./img/avatar.jpg" alt="" class="avatar">
+                        <img :src="element.avatar" alt="" class="avatar">
                     </div>
                     <div class="d-flex flex-column ms-2">
-                        <span class="">Pietro</span>
-                        <span class="access">ultimo accesso alle 22:10</span>
+                        <span class="">{{element.name}}</span>
+                        <span class="access" v-if="element.messages.length >0 ">
+                            {{ element.messages[element.messages.length - 1].message }}
+                        </span>
                     </div>
+                    <span class="time position-absolute top-0 end-0 mt-2">12:12</span>
                 </div>
             </section>
         </aside>
@@ -92,15 +100,15 @@
             </section>
             <section class="main_chat overflow-auto">
                 <div class="sent d-flex justify-content-end mb-2">
-                    <div class="message rounded-4 position-relative">
-                        <p>prova </p>
-                        <span class="time position-absolute bottom-0 end-0">20:30</span>
+                    <div class="message rounded-4 d-flex align-items-center position-relative">
+                        <p class="m-0">prova</p>
+                        <span class="time position-absolute bottom-0 end-0 me-2">20:30</span>
                     </div>
                 </div>
                 <div class="receiver mb-2">
-                    <div class="message rounded-4 position-relative">
-                        <p>prova</p>
-                        <span class="time position-absolute bottom-0 end-0 ">22:30</span>
+                    <div class="message rounded-4 d-flex align-items-center position-relative">
+                        <p class="m-0">prova</p>
+                        <span class="time position-absolute bottom-0 end-0 me-2">22:30</span>
                     </div>
                 </div>
             </section>
@@ -113,6 +121,7 @@
             </section>
         </main>
     </div>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

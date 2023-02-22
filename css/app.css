@@ -56,11 +56,15 @@ li{
     width: 52px;
     height: 52px;
     border-radius: 50%;
+    text-align: center;
     overflow: hidden;
 }
 
 .avatar {
+    height: 100%;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* sidebar_notication */
@@ -85,7 +89,7 @@ li{
 /* sidebar_chat */
 .sidebar_chat{
     height: calc(100% - 213px);
-    background-color: var(--grey);
+    background-color: var(--white);
 }
 .contact{
     background-color: white;
@@ -111,6 +115,7 @@ li{
 .message{
     max-width: 327px;
     min-width: 100px;
+    min-height: 56px;
     padding: 10px;
     background-color: var(--messag);
 }
