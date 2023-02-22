@@ -62,3 +62,12 @@ li{
     color: #82D5FC;
     font-size: 22px;
 }
+
+/* sidebar_search */
+.sidebar_search{
+    background-color: #E7E7E7;
+    height: 53px;
+}
+.custom-form{
+    width: 100%;
+}
