@@ -1,4 +1,54 @@
-.custom-container{
-    max-width: 1600px !important; 
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.custom-container {
+    max-width: 1600px !important;
     height: 960px;
+}
+
+/* SIDEBAR / MAIN */
+.sidebar {
+    width: 561px;
+    height: 100%;
+}
+
+.main {
+    width: calc(100% - 561px);
+    height: 100%;
+}
+
+
+/* sidebar_profile */
+.sidebar_profile {
+    background-color: #E7E7E7;
+    height: 74px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    margin: 0px 10px;
+}
+
+.custom-buttom {
+    color: #A8A8A8;
+    font-size: 23px;
+}
+
+.container-avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar {
+    width: 100%;
 }

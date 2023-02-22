@@ -10,14 +10,34 @@
     <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
-    <div class="container custom-container">
-        <aside>
-            <section class="sidebar_profile"></section>
+    <div class="container custom-container d-flex mt-4">
+        <aside class="sidebar">
+            <section class="sidebar_profile d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center ms-2">
+                    <div class="container-avatar">
+                        <img src="./img/avatar.jpg" alt="" class="avatar">
+                    </div>
+                    <span>Pietro</span>
+                </div>
+                <div>
+                    <ul class="d-flex">
+                        <li>
+                            <a href=""><i class="fa-regular fa-circle custom-buttom"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-message custom-buttom"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-ellipsis-vertical custom-buttom"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
             <section class="sidebar_notication"></section>
             <section class="sidebar_search"></section>
             <section class="sidebar_chat"></section>
         </aside>
-        <main>
+        <main class="main">
             <section class="main_info"></section>
             <section class="main_chat"></section>
             <section class="main_write"></section>
