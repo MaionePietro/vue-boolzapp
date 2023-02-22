@@ -3,13 +3,14 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: var(--bg);
+  background-image: Linear-gradient(to top, var(--bg) 85%, var(--green)25%);
 }
 :root {
     --grey: #E7E7E7;
     --blu: #82D5FC;
     --greyText: #999C9D;
     --bg: #CDD6D5;
+    --green: #008B7D;
 }
 
 .custom-container {
@@ -96,9 +97,18 @@ li{
     background-image: url(../img/bg.jpg);
 }
 
-
 /* main_write */
 .main_write{
     background-color: var(--grey);
     height: 74px;
+}
+
+.icon{
+    color: var(--greyText);
+    font-size: 27px;
+    margin: 0px 38px;
+}
+.form-contro-custom{
+    width: 834px;
+    height: 54px;
 }
