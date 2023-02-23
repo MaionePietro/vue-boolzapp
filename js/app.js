@@ -168,6 +168,11 @@ createApp({
             ],
             contatore : null,
         }
+    },
+    methods:{
+        stamp(){
+            console.log('prova');
+        }
     }
 }).mount('#app');
 console.log(createApp.contatore);

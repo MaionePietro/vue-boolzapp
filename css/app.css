@@ -94,6 +94,9 @@ li{
 .contact{
     background-color: white;
 }
+.contact:hover{
+    background-color: var(--grey);
+}
 
 
 /* main_info */
