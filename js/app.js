@@ -165,13 +165,15 @@ createApp({
                         }
                     ],
                 }
-            ]
+            ],
+            chiave: 0,
         }
     },
     methods:{
         clickContact(index){
-            console.log("indice contatto: "+index);
-            return index;
+            this.chiave = index
+            //console.log("indice contatto: "+index);
+            //return indexx;
         }
     }
 }).mount('#app');
