@@ -1,10 +1,10 @@
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
   font-family: 'Open Sans', sans-serif;
   background-image: Linear-gradient(to top, var(--bg) 85%, var(--green)25%);
 }
+
 :root {
     --grey: #E7E7E7;
     --blu: #82D5FC;

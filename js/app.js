@@ -165,7 +165,9 @@ createApp({
                         }
                     ],
                 }
-            ]
+            ],
+            contatore : null,
         }
     }
 }).mount('#app');
+console.log(createApp.contatore);

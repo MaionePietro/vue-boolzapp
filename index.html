@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/app.css">
 </head>
 
-<body class="d-flex align-items-center">
+<body class="">
 
     <div class="container custom-container d-flex mt-5" id="app">
         <aside class="sidebar border-end">
@@ -56,6 +56,7 @@
             </section>
             <section class="sidebar_chat overflow-auto">
                 <div 
+                @click="contatore = 1"
                 v-for="(element, index) in contacts"
                 class="contact border d-flex align-items-center p-2 position-relative">
                 
@@ -68,7 +69,7 @@
                             {{ element.messages[element.messages.length - 1].message }}
                         </span>
                     </div>
-                    <span class="time position-absolute top-0 end-0 mt-2">12:12</span>
+                    <span class="time position-absolute top-0 end-0 mt-2">{{contatore}}</span>
                 </div>
             </section>
         </aside>
