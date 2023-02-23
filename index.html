@@ -56,7 +56,7 @@
             </section>
             <section class="sidebar_chat overflow-auto">
                 <div 
-                @click="stamp"
+                @click="clickContact(index)"
                 v-for="(element, index) in contacts"
                 class="contact border d-flex align-items-center p-2 position-relative">
                 
@@ -65,11 +65,11 @@
                     </div>
                     <div class="d-flex flex-column ms-2">
                         <span class="">{{element.name}}</span>
-                        <span class="access" v-if="element.messages.length >0 ">
+                        <span class="access">
                             {{ element.messages[element.messages.length - 1].message }}
                         </span>
                     </div>
-                    <span class="time position-absolute top-0 end-0 mt-2">{{contatore}}</span>
+                    <span class="time position-absolute top-0 end-0 mt-2"></span>
                 </div>
             </section>
         </aside>
@@ -100,16 +100,12 @@
                 </div>
             </section>
             <section class="main_chat overflow-auto">
-                <div class="sent d-flex justify-content-end mb-2">
-                    <div class="message rounded-4 d-flex align-items-center position-relative">
-                        <p class="m-0">prova</p>
+                <div class="sent d-flex justify-content-end flex-column">
+                    <div 
+                    v-for="(element, index) in contacts[2].messages"
+                    class="message rounded-4 d-flex align-items-center position-relative mb-2">
+                        <p class="m-0">{{ element.message }}</p>
                         <span class="time position-absolute bottom-0 end-0 me-2">20:30</span>
-                    </div>
-                </div>
-                <div class="receiver mb-2">
-                    <div class="message rounded-4 d-flex align-items-center position-relative">
-                        <p class="m-0">prova</p>
-                        <span class="time position-absolute bottom-0 end-0 me-2">22:30</span>
                     </div>
                 </div>
             </section>

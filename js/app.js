@@ -165,14 +165,13 @@ createApp({
                         }
                     ],
                 }
-            ],
-            contatore : null,
+            ]
         }
     },
     methods:{
-        stamp(){
-            console.log('prova');
+        clickContact(index){
+            console.log("indice contatto: "+index);
+            return index;
         }
     }
 }).mount('#app');
-console.log(createApp.contatore);
