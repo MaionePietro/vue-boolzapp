@@ -101,12 +101,14 @@
             </section>
             <section class="main_chat overflow-auto">
                 <div class="sent d-flex justify-content-end flex-column">
-                    <div 
-                    v-for="(element, index) in contacts[chiave].messages"
-                    class="message rounded-4 d-flex align-items-center position-relative mb-2">
-                        <p class="m-0">{{ element.message }}</p>
-                        <span class="time position-absolute bottom-0 end-0 me-2">20:30</span>
-                    </div>
+                    <template v-for="(element, index) in contacts[chiave].messages">
+                        <div 
+                        :class="element.status === 'sent' ? 'sent' : 'receiver' "
+                        class="message rounded-4 d-flex align-items-center position-relative mb-2">
+                            <p class="m-0">{{ element.message }}</p>
+                            <span class="time position-absolute bottom-0 end-0 me-2">20:30</span>
+                        </div>
+                    </template>
                 </div>
             </section>
             <section class="main_write d-flex align-items-center">

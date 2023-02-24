@@ -126,7 +126,7 @@ li{
     font-size: 10px;
     color: var(--greyText);
 }
-.receiver .message{
+.receiver{
     background-color: var(--white);
 }
 
