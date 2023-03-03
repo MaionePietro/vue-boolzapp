@@ -126,8 +126,13 @@ li{
     font-size: 10px;
     color: var(--greyText);
 }
-.receiver{
+.receivercolor{
     background-color: var(--white);
+    
+}
+.sent{
+    display: flex;
+    justify-content: flex-end;
 }
 
 
