@@ -167,6 +167,7 @@ createApp({
                 }
             ],
             chiave: 0,
+            message: '',
         }
     },
     methods:{
@@ -174,6 +175,11 @@ createApp({
             this.chiave = index
             //console.log("indice contatto: "+index);
             //return indexx;
-        }
+        },
+        sendMessage() {
+			const text = this.message.trim()
+			console.log('messaggio:'+text)
+            
+		}
     }
 }).mount('#app');

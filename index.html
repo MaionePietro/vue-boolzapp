@@ -116,7 +116,9 @@
                 <a href=""><i class="fa-regular fa-face-smile icon"></i></a>
                 <div>
                     <input type="text" class="form-contro rounded border border-1 form-contro-custom" id="inputPassword"
-                        placeholder="Scrivi messaggio" />
+                        placeholder="Scrivi messaggio"
+                        v-model="message"
+						@keyup.enter="sendMessage" />
                 </div>
                 <a href=""><i class="fa-solid fa-microphone icon"></i></a>
             </section>
